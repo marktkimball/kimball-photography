@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import Logo from '../img/logo.png';
-import './navbar.scss';
+import React from "react";
+import { Link } from "gatsby";
+import Logo from "../img/logo.png";
+import "./navbar.scss";
 
 const Navbar = () => (
   <nav className="menu-container">
@@ -9,8 +9,8 @@ const Navbar = () => (
     <span></span>
     <span></span>
     <span></span>
-    <Link to="/" className="menu-logo" title="Audrey Walsh Photography">
-      <img alt="Audrey Walsh Photography Logo" src={Logo} />
+    <Link to="/" className="menu-logo" title="Kimball Photography">
+      <img alt="Kimball Photography Logo" src={Logo} />
     </Link>
 
     <div className="menu">

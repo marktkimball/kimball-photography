@@ -1,9 +1,9 @@
-@import '~bulma/sass/utilities/initial-variables';
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@900&display=swap');
+@import "~bulma/sass/utilities/initial-variables";
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Oswald:wght@700&display=swap");
 
 // Config vars
 $brand-primary: #ffffff;
-$brand-secondary: #d4af37;
+$brand-secondary: #000;
 $brand-primary-text: #212121;
 $brand-primary-text-invert: #ffffff;
 
@@ -16,7 +16,7 @@ body,
 button,
 input,
 textarea {
-  font-family: 'Alice', sans-serif !important;
+  font-family: "Domine", sans-serif !important;
 }
 
 .container {
@@ -87,7 +87,7 @@ textarea {
   margin: 0 0 1.5em 0;
 }
 
-@import '~bulma';
+@import "~bulma";
 
 h1,
 h2,
@@ -124,21 +124,21 @@ h6 {
 }
 
 .headline-text {
-  font-family: 'Playfair Display', serif;
+  font-family: "Oswald", serif;
   font-weight: bold;
 }
 
 .sub-headline-text {
-  font-family: 'Playfair Display', serif;
+  font-family: "Oswald", serif;
 }
 
 .alt-headline-text {
-  font-family: 'Alice', sans-serif;
+  font-family: "Domine", sans-serif;
   font-weight: bold;
 }
 
 .body-text {
-  font-family: 'Alice', sans-serif;
+  font-family: "Domine", sans-serif;
 }
 
 .text-align-center {

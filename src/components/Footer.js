@@ -1,39 +1,35 @@
-import React from 'react';
-import logo from '../img/logo.png';
-import './footer.scss';
+import React from "react";
+import logo from "../img/logo.png";
+import "./footer.scss";
 
 const Footer = () => (
   <footer className="footer">
     <div className="content has-text-centered">
-      <img
-        src={logo}
-        alt="Audrey Walsh Photography"
-        style={{ width: '300px' }}
-      />
+      <img src={logo} alt="Kimball Photography" style={{ width: "300px" }} />
     </div>
 
     <div className="content">
       <div className="container footer-group-container">
-        <a className="footer-link" href="mailto: audrey@gmail.com">
-          email: audreywalshphotography@gmail.com
+        <a className="footer-link" href="mailto: marktkimball@gmail.com">
+          email: marktkimball@gmail.com
         </a>
         <a
           className="footer-link"
           title="instagram"
-          href="https://www.instagram.com/audreywalshphotography/"
+          href="https://www.instagram.com/kimballphotography/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          instagram: @audreywalshphotography
+          instagram: @kimballphotography
         </a>
       </div>
     </div>
     <div className="content">
       <div className="container copyright">
-        Copyright © {new Date().getFullYear()} Audrey Walsh Photography. All
-        rights reserved.
+        Copyright © {new Date().getFullYear()} Kimball Photography. All rights
+        reserved.
         <p>
-          Created by{' '}
+          Created by{" "}
           <a
             className="footer-link copyright"
             href="https://marktkimball.github.io/"
