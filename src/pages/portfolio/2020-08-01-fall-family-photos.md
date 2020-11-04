@@ -10,4 +10,4 @@ tags:
 
 Took some great shots during golden hour!
 
-![santa-monica-1](/img/family-photo-1.jpg)
+![family-photo-1](/img/family-photo-1.jpg)

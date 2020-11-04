@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
 featuredImages:
-  - image: /img/child-photo-1.jpg
+  - image: /img/pumpkin-children-1.jpg
     caption: Fall Photos
-    secondaryCaption: Salt Lake City, UT
+    secondaryCaption: Ahwatukee, AZ
   - image: /img/family-photo-1.jpg
     caption: Family Photos
     secondaryCaption: Draper, UT
