@@ -14,17 +14,20 @@ const Footer = () => (
 
     <div className="content">
       <div className="container footer-group-container">
-        <a className="footer-link" href="mailto: marktkimball@gmail.com">
-          email: marktkimball@gmail.com
+        <a
+          className="footer-link"
+          href="mailto: markkimballphotography@gmail.com"
+        >
+          email: markkimballphotography@gmail.com
         </a>
         <a
           className="footer-link"
           title="instagram"
-          href="https://www.instagram.com/kimballphotography/"
+          href="https://www.instagram.com/markkimballphotography/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          instagram: @kimballphotography
+          instagram: @markkimballphotography
         </a>
       </div>
     </div>
