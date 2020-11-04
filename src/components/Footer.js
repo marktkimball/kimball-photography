@@ -5,7 +5,11 @@ import "./footer.scss";
 const Footer = () => (
   <footer className="footer">
     <div className="content has-text-centered">
-      <img src={logo} alt="Kimball Photography" style={{ width: "300px" }} />
+      <img
+        src={logo}
+        alt="Mark Kimball Photography"
+        style={{ width: "300px" }}
+      />
     </div>
 
     <div className="content">
@@ -26,8 +30,8 @@ const Footer = () => (
     </div>
     <div className="content">
       <div className="container copyright">
-        Copyright © {new Date().getFullYear()} Kimball Photography. All rights
-        reserved.
+        Copyright © {new Date().getFullYear()} Mark Kimball Photography. All
+        rights reserved.
         <p>
           Created by{" "}
           <a

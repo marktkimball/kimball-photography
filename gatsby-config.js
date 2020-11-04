@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Kimball Photography",
+    title: "Mark Kimball Photography",
     description:
-      "Kimball Photography. Phoenix, Arizona. Weddings, engagements, families, couples, lifestyle, events.",
+      "Mark Kimball Photography. Phoenix, Arizona. Weddings, engagements, families, couples, lifestyle, events.",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

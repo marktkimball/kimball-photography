@@ -9,8 +9,8 @@ const Navbar = () => (
     <span></span>
     <span></span>
     <span></span>
-    <Link to="/" className="menu-logo" title="Kimball Photography">
-      <img alt="Kimball Photography Logo" src={Logo} />
+    <Link to="/" className="menu-logo" title="Mark Kimball Photography">
+      <img alt="Mark Kimball Photography Logo" src={Logo} />
     </Link>
 
     <div className="menu">
