@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Content, { HTMLContent } from '../components/Content';
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
 
-import './pages.scss';
+import "./pages.scss";
 
 export const AboutPageTemplate = ({
   content,
@@ -17,10 +17,12 @@ export const AboutPageTemplate = ({
   return (
     <section className="section section--gradient text-align-center">
       <div className="about-me-intro">
-        <h2 className="headline-text">{title}</h2>
         <img alt="About me" src={image.publicURL} />
+        <div className="content-container">
+          <h2 className="headline-text">{title}</h2>
+          <PageContent className="content" content={content} />
+        </div>
       </div>
-      <PageContent className="content" content={content} />
     </section>
   );
 };

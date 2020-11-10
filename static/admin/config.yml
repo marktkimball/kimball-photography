@@ -2,47 +2,28 @@ backend:
   name: git-gateway
   branch: master
   commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'portfolio'
-    label: 'Portfolio'
-    folder: 'src/pages/portfolio'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    fields:
-      - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'portfolio-item',
-        }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'text' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Featured Image', name: featuredimage, widget: image }
-
-  - name: 'pages'
-    label: 'Pages'
+  - name: "pages"
+    label: "Pages"
     files:
-      - file: 'src/pages/index.md'
-        label: 'Home Page'
-        name: 'index'
+      - file: "src/pages/index.md"
+        label: "Home Page"
+        name: "index"
         fields:
           - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'index-page',
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
             }
           - {
               label: Featured Images,
@@ -54,22 +35,45 @@ collections:
                   { label: Image, name: image, widget: image },
                   { label: Caption, name: caption, widget: string },
                   {
-                    label: 'Secondary Caption',
+                    label: "Secondary Caption",
                     name: secondaryCaption,
                     widget: string,
                   },
                 ],
             }
-      - file: 'src/pages/about/index.md'
+      - file: "src/pages/about/index.md"
         label: About
         name: about
         fields:
           - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'about-page',
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Body, name: body, widget: markdown }
+      - file: "src/pages/portfolio/index.md"
+        label: Portfolio
+        name: portfolio
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "portfolio-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "title", widget: "string" }
+          - {
+              label: Items,
+              name: items,
+              widget: list,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Date, name: date, widget: datetime },
+                  { label: Tags, name: tags, widget: list },
+                ],
+            }

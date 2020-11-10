@@ -48,7 +48,7 @@
   padding: 0 10%;
 
   h3 {
-    font-family: 'Eczar', serif;
+    font-family: "Eczar", serif;
   }
 }
 
@@ -63,14 +63,18 @@
 }
 
 .about-me-intro {
-  align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   margin-bottom: 64px;
 
+  .content {
+    margin: 0 32px;
+    line-height: 32px;
+  }
+
   h2 {
-    margin-bottom: 72px;
+    margin: 72px 0;
   }
 
   img {
@@ -84,6 +88,12 @@
   }
 
   .about-me-intro {
+    flex-direction: column;
+
+    .content {
+      margin: 0;
+    }
+
     img {
       max-width: 100%;
     }
@@ -93,7 +103,7 @@
     display: block;
     margin: 32px 8px;
 
-    > * {
+    > .content {
       margin-bottom: 32px;
     }
   }
