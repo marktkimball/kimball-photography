@@ -13,7 +13,6 @@ import "../components/portfolio.scss";
 export const PortfolioPageTemplate = ({ items, subtitle, tags, title }) => {
   const [selectedTag, setSelectedTag] = useState("");
   const [lightboxImageIndex, selectLightboxImage] = useState(-1);
-  console.info("ITEMS", items, items[lightboxImageIndex]);
 
   return (
     <>
@@ -68,10 +67,10 @@ export const PortfolioPageTemplate = ({ items, subtitle, tags, title }) => {
           id={`lightbox-${lightboxImageIndex}`}
         >
           <div className="content">
-            <img
-              src={
-                items[lightboxImageIndex]?.image?.publicURL ||
-                ClearPlaceholderImage
+            <PreviewCompatibleImage
+              imageStyle={{ objectFit: "contain" }}
+              imageInfo={
+                items[lightboxImageIndex]?.image || ClearPlaceholderImage
               }
             />
             <span
@@ -134,11 +133,10 @@ export const PortfolioPageQuery = graphql`
         items {
           image {
             childImageSharp {
-              fluid(maxWidth: 300, quality: 90) {
+              fluid(maxWidth: 900, quality: 90) {
                 ...GatsbyImageSharpFluid
               }
             }
-            publicURL
           }
           date
           tags
