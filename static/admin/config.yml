@@ -65,7 +65,7 @@ collections:
               default: "portfolio-page",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
           - {
               label: Items,
               name: items,

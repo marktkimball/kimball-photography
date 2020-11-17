@@ -10,7 +10,7 @@ featuredImages:
   - image: /img/children-photo-1.jpg
     caption: Family Photos
     secondaryCaption: Provo, UT
-  - image: /img/couples-photo-1.jpg
-    caption: Couples
-    secondaryCaption: Salt Lake City, UT
+  - image: /img/IMGP9895.jpeg
+    caption: Weddings
+    secondaryCaption: Phoenix, AZ
 ---

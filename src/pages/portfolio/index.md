@@ -4,6 +4,22 @@ path: /portfolio
 title: Portfolio
 subtitle: Explore my recent work
 items:
+  - image: /img/IMGP0011.jpeg
+    date: 2020-11-16T12:00:00.000Z
+    tags:
+      - wedding
+  - image: /img/IMGP0085.jpeg
+    date: 2020-11-16T12:00:00.000Z
+    tags:
+      - wedding
+  - image: /img/IMGP9833.jpeg
+    date: 2020-11-16T12:00:00.000Z
+    tags:
+      - wedding
+  - image: /img/IMGP9895.jpeg
+    date: 2020-11-16T12:00:00.000Z
+    tags:
+      - wedding
   - image: /img/newborn-1.jpg
     date: 2020-11-09T12:00:00.000Z
     tags:
